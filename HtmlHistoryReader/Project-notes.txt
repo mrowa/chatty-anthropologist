@@ -1,0 +1,28 @@
+HtmlHistoryReader project.
+
+It's meant for reading pidgin's html-based history.
+
+Pidgin's history xml file overview:
+
+<html>
+	<head>
+		<meta>
+		<title>title of conversation and stuff</title>
+	</head>
+	<body>
+		<h3(?)>title of conversation + date and who's it's between.</h3(?)>
+		<font color="#XYZXYZ">
+			<font size="X?">
+				datetime in format ([dd.mm.yyyy]hh:mm:ss) <- how about different languages?
+			</font>
+			SPACE_CHARACTER
+			<b>
+				SENDER_NAME:
+			</b>
+		</font>SPACECHARACTER
+		MESSAGE
+		<br/>
+		
+		...and this is multiple times.
+	</body>
+</html>
